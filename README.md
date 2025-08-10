@@ -67,12 +67,12 @@ PHONE=+71234567890
 # Имя файла сессии (по умолчанию session_user)
 SESSION_NAME=session_user
 
-# Пороговые параметры
-MIN_PARTICIPANTS=2000
-RECENT_DAYS=180
-MSG_PERIOD_SECONDS=60
-MAX_MSG_COUNT=15
-MIN_ONLINE=300
+# Пороговые значения для «живых» чатов
+MIN_PARTICIPANTS=2000    # минимум участников в чате
+MIN_ONLINE=300           # минимум одновременно онлайн
+MSG_PERIOD_SECONDS=60    # интервал в секундах для подсчёта сообщений
+MAX_MSG_COUNT=15         # максимально допустимое число сообщений за период
+RECENT_DAYS=180          # проверка «свежести» последнего сообщения (не старее этого числа дней)
 
 # Файлы ввода/вывода
 INPUT_FILE=chats.txt
